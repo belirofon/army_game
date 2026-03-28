@@ -1,0 +1,34 @@
+{
+  "seed": 42,
+  "runs": 1000,
+  "events_file": "events.json",
+  "difficulty_modifier": {
+    "turn_1_10": 0.6,
+    "turn_11_20": 0.85,
+    "turn_21_30": 1.05
+  },
+  "recovery_trigger": 2,
+  "targets": {
+    "death_rate": [
+      0.2,
+      0.35
+    ],
+    "victory_rate": [
+      0.65,
+      0.8
+    ],
+    "perfect_rate": [
+      0.0,
+      0.05
+    ],
+    "avg_turn_death": [
+      12,
+      28
+    ],
+    "avg_mor_change": [
+      -2.0,
+      -1.2
+    ]
+  },
+  "simulation_date": "2026-03-22 19:24:34.970051"
+}

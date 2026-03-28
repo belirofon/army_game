@@ -1,0 +1,117 @@
+type Query {
+  player(id: ID!): Player
+  currentEvent(playerId: ID!): EventInstance
+  eventHistory(playerId: ID!, limit: Int): [GameLogEntry!]!
+  loadGame(gameId: ID!): GameState
+}
+
+type Mutation {
+  startGame: StartGamePayload!
+  choose(playerId: ID!, choiceId: ID!, expectedVersion: Int!): ChooseResult!
+  restartGame(playerId: ID!): StartGamePayload!
+}
+
+type StartGamePayload {
+  gameId: ID!
+  player: Player!
+  currentEvent: EventInstance
+  isGameOver: Boolean!
+  final: Final
+}
+
+type Player {
+  id: ID!
+  stats: PlayerStats!
+  formalRank: String!
+  informalStatus: String!
+  turn: Int!
+  flags: [String!]!
+  isFinished: Boolean!
+  version: Int!
+  createdAt: String!
+  updatedAt: String!
+}
+
+type PlayerStats {
+  str: Int!
+  end: Int!
+  agi: Int!
+  mor: Int!
+  disc: Int!
+}
+
+type EventInstance {
+  id: ID!
+  templateId: String!
+  description: String!
+  resolvedVariables: JSON
+  choices: [Choice!]!
+  context: EventContext!
+}
+
+type Choice {
+  id: ID!
+  text: String!
+  available: Boolean!
+}
+
+type EventContext {
+  time: String!
+  location: String!
+  urgency: String!
+}
+
+type CheckResult {
+  success: Boolean!
+  outcome: String!
+  description: String!
+}
+
+type Effect {
+  stat: String!
+  delta: Int!
+  previousValue: Int!
+  newValue: Int!
+}
+
+type ChooseResult {
+  success: Boolean!
+  checkResult: CheckResult!
+  effects: [Effect!]!
+  updatedPlayer: Player!
+  nextEvent: EventInstance
+  gameOver: Boolean!
+  final: Final
+  newVersion: Int!
+}
+
+type GameLogEntry {
+  id: ID!
+  playerId: ID!
+  turn: Int!
+  eventDescription: String!
+  choiceText: String!
+  checkResult: CheckResult!
+  effects: [Effect!]!
+  createdAt: String!
+}
+
+type Final {
+  type: String!
+  title: String!
+  subtitle: String
+  description: String!
+  finalStats: PlayerStats!
+  achievedOnTurn: Int!
+}
+
+type GameState {
+  player: Player!
+  currentEvent: EventInstance
+  eventHistory: [GameLogEntry!]!
+  isGameOver: Boolean!
+  final: Final
+  gameId: ID!
+}
+
+scalar JSON

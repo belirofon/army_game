@@ -1,0 +1,282 @@
+[
+  {
+    "id": "e001",
+    "type": "ROUTINE",
+    "difficulty": 2,
+    "choices": [
+      {
+        "id": "e001_c1",
+        "probability": 0.50,
+        "success_effects": {"mor": 0, "disc": 2},
+        "partial_effects": {"mor": -2, "disc": 0},
+        "failure_effects": {"mor": -5, "disc": -3}
+      }
+    ]
+  },
+  {
+    "id": "e002",
+    "type": "ROUTINE",
+    "difficulty": 2,
+    "choices": [
+      {
+        "id": "e002_c1",
+        "probability": 0.48,
+        "success_effects": {"mor": 0, "str": 1},
+        "partial_effects": {"mor": -2},
+        "failure_effects": {"mor": -5}
+      }
+    ]
+  },
+  {
+    "id": "e003",
+    "type": "SAFE",
+    "difficulty": 1,
+    "choices": [
+      {
+        "id": "e003_c1",
+        "probability": 0.92,
+        "success_effects": {"mor": 3},
+        "partial_effects": {"mor": 0},
+        "failure_effects": {"mor": -2}
+      }
+    ]
+  },
+  {
+    "id": "e004",
+    "type": "SAFE",
+    "difficulty": 1,
+    "choices": [
+      {
+        "id": "e004_c1",
+        "probability": 0.90,
+        "success_effects": {"mor": 2, "end": 1},
+        "partial_effects": {"mor": -1},
+        "failure_effects": {"mor": -3}
+      }
+    ]
+  },
+  {
+    "id": "e005",
+    "type": "SOCIAL",
+    "difficulty": 3,
+    "choices": [
+      {
+        "id": "e005_c1",
+        "probability": 0.44,
+        "success_effects": {"mor": 0, "disc": -5},
+        "partial_effects": {"mor": -3, "disc": -2},
+        "failure_effects": {"mor": -6, "disc": -6}
+      }
+    ]
+  },
+  {
+    "id": "e006",
+    "type": "SOCIAL",
+    "difficulty": 3,
+    "choices": [
+      {
+        "id": "e006_c1",
+        "probability": 0.42,
+        "success_effects": {"mor": 0, "disc": 4},
+        "partial_effects": {"mor": -3, "disc": 1},
+        "failure_effects": {"mor": -6, "disc": -4}
+      }
+    ]
+  },
+  {
+    "id": "e007",
+    "type": "SOCIAL",
+    "difficulty": 2,
+    "choices": [
+      {
+        "id": "e007_c1",
+        "probability": 0.50,
+        "success_effects": {"mor": 0},
+        "partial_effects": {"mor": -2},
+        "failure_effects": {"mor": -5}
+      }
+    ]
+  },
+  {
+    "id": "e008",
+    "type": "INFORMAL",
+    "difficulty": 3,
+    "choices": [
+      {
+        "id": "e008_c1",
+        "probability": 0.42,
+        "success_effects": {"mor": -1, "disc": -8, "agi": 2},
+        "partial_effects": {"mor": -4, "disc": -4},
+        "failure_effects": {"mor": -7, "disc": -6}
+      }
+    ]
+  },
+  {
+    "id": "e009",
+    "type": "INFORMAL",
+    "difficulty": 3,
+    "choices": [
+      {
+        "id": "e009_c1",
+        "probability": 0.44,
+        "success_effects": {"mor": 0, "disc": -6},
+        "partial_effects": {"mor": -3, "disc": -3},
+        "failure_effects": {"mor": -6, "disc": -6}
+      }
+    ]
+  },
+  {
+    "id": "e010",
+    "type": "INFORMAL",
+    "difficulty": 4,
+    "choices": [
+      {
+        "id": "e010_c1",
+        "probability": 0.36,
+        "success_effects": {"mor": -1, "disc": -10, "str": 1},
+        "partial_effects": {"mor": -5, "disc": -5},
+        "failure_effects": {"mor": -8, "disc": -8}
+      }
+    ]
+  },
+  {
+    "id": "e011",
+    "type": "INSPECTION",
+    "difficulty": 4,
+    "choices": [
+      {
+        "id": "e011_c1",
+        "probability": 0.38,
+        "success_effects": {"mor": 0, "disc": 10},
+        "partial_effects": {"mor": -4, "disc": 4},
+        "failure_effects": {"mor": -7, "disc": -6}
+      }
+    ]
+  },
+  {
+    "id": "e012",
+    "type": "INSPECTION",
+    "difficulty": 4,
+    "choices": [
+      {
+        "id": "e012_c1",
+        "probability": 0.40,
+        "success_effects": {"mor": 0, "disc": 8},
+        "partial_effects": {"mor": -3, "disc": 3},
+        "failure_effects": {"mor": -6, "disc": -4}
+      }
+    ]
+  },
+  {
+    "id": "e013",
+    "type": "INSPECTION",
+    "difficulty": 5,
+    "choices": [
+      {
+        "id": "e013_c1",
+        "probability": 0.30,
+        "success_effects": {"mor": -1, "disc": 12},
+        "partial_effects": {"mor": -5, "disc": 5},
+        "failure_effects": {"mor": -9, "disc": -6}
+      }
+    ]
+  },
+  {
+    "id": "e014",
+    "type": "EMERGENCY",
+    "difficulty": 4,
+    "choices": [
+      {
+        "id": "e014_c1",
+        "probability": 0.36,
+        "success_effects": {"mor": 0, "str": 2, "end": 2},
+        "partial_effects": {"mor": -5, "str": 0},
+        "failure_effects": {"mor": -9, "end": -3}
+      }
+    ]
+  },
+  {
+    "id": "e015",
+    "type": "EMERGENCY",
+    "difficulty": 4,
+    "choices": [
+      {
+        "id": "e015_c1",
+        "probability": 0.38,
+        "success_effects": {"mor": 0, "disc": 5, "end": 1},
+        "partial_effects": {"mor": -4, "disc": 1},
+        "failure_effects": {"mor": -7, "disc": -5}
+      }
+    ]
+  },
+  {
+    "id": "e016",
+    "type": "EMERGENCY",
+    "difficulty": 5,
+    "choices": [
+      {
+        "id": "e016_c1",
+        "probability": 0.28,
+        "success_effects": {"mor": 0, "str": 3, "disc": 8},
+        "partial_effects": {"mor": -5, "disc": 3},
+        "failure_effects": {"mor": -10, "disc": -8}
+      }
+    ]
+  },
+  {
+    "id": "e017",
+    "type": "ROUTINE",
+    "difficulty": 3,
+    "choices": [
+      {
+        "id": "e017_c1",
+        "probability": 0.45,
+        "success_effects": {"mor": 0, "disc": 3},
+        "partial_effects": {"mor": -3, "disc": 0},
+        "failure_effects": {"mor": -6, "disc": -3}
+      }
+    ]
+  },
+  {
+    "id": "e018",
+    "type": "ROUTINE",
+    "difficulty": 3,
+    "choices": [
+      {
+        "id": "e018_c1",
+        "probability": 0.43,
+        "success_effects": {"mor": 0, "agi": 1, "disc": 2},
+        "partial_effects": {"mor": -3},
+        "failure_effects": {"mor": -5}
+      }
+    ]
+  },
+  {
+    "id": "e019",
+    "type": "SOCIAL",
+    "difficulty": 4,
+    "choices": [
+      {
+        "id": "e019_c1",
+        "probability": 0.38,
+        "success_effects": {"mor": 1, "disc": -5},
+        "partial_effects": {"mor": -3, "disc": -2},
+        "failure_effects": {"mor": -7, "disc": -5}
+      }
+    ]
+  },
+  {
+    "id": "e020",
+    "type": "SAFE",
+    "difficulty": 1,
+    "choices": [
+      {
+        "id": "e020_c1",
+        "probability": 0.88,
+        "success_effects": {"mor": 4},
+        "partial_effects": {"mor": 0},
+        "failure_effects": {"mor": -2}
+      }
+    ]
+  }
+]

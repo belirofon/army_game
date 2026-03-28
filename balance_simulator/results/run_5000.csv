@@ -1,0 +1,2 @@
+total_runs,death_count,victory_count,perfect_count,death_rate,victory_rate,perfect_rate,avg_turn_death,avg_mor_change
+5000,1568,3432,0,0.3136,0.6864,0.0000,26.90,-1.4123

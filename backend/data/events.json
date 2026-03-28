@@ -1,0 +1,134 @@
+{
+  "events": [
+    {"id": "morning_formation", "type": "ROUTINE", "checkType": "THRESHOLD", "location": "BARRACKS", "description": "Утреннее построение. Сержант проверяет солдат, кто-то не выспался, кто-то опоздал.", "choices": [
+      {"id": "choice_1", "text": "Стоять смирно, как памятник", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "mor", "delta": 2}, {"stat": "disc", "delta": 1}]},
+      {"id": "choice_2", "text": "Поправить ремень незаметно", "checkType": "THRESHOLD", "threshold": 60, "effects": [{"stat": "disc", "delta": 1}]},
+      {"id": "choice_3", "text": "Зевнуть погромче", "checkType": "CATASTROPHIC", "threshold": 40, "effects": [{"stat": "mor", "delta": -3}, {"stat": "disc", "delta": -2}]}
+    ]},
+    {"id": "dining_kotlets", "type": "SAFE", "checkType": "THRESHOLD", "location": "DINING_ROOM", "description": "Обед в столовой. Повар-прапорщик спрашивает: 'Сколько котлет можно сделать из килограмма мяса?'", "choices": [
+      {"id": "choice_1", "text": "В ресторане — 15!", "checkType": "PROBABILITY", "Chance": 80, "effects": [{"stat": "mor", "delta": 2}]},
+      {"id": "choice_2", "text": "В солдатской столовой — 59!", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "mor", "delta": 3}]},
+      {"id": "choice_3", "text": "60 — это уже булочки, товарищ прапорщик!", "checkType": "CATASTROPHIC", "threshold": 30, "effects": [{"stat": "disc", "delta": -2}, {"stat": "mor", "delta": -2}]}
+    ]},
+    {"id": "telephone_call", "type": "SAFE", "checkType": "PROBABILITY", "location": "DEFAULT", "description": "Телефон-автомат на проходной. Можно позвонить домой, но очередь — человек двадцать.", "choices": [
+      {"id": "choice_1", "text": "Позвонить родителям — 3 минуты максимум", "checkType": "PROBABILITY", "Chance": 70, "effects": [{"stat": "mor", "delta": 3}]},
+      {"id": "choice_2", "text": "Позвонить девушке — пока не кончились деньги", "checkType": "PROBABILITY", "Chance": 60, "effects": [{"stat": "mor", "delta": 2}]},
+      {"id": "choice_3", "text": "Не звонить — дорого и очередь", "checkType": "PROBABILITY", "Chance": 50, "effects": [{"stat": "mor", "delta": -2}]}
+    ]},
+    {"id": "evening_check", "type": "ROUTINE", "checkType": "THRESHOLD", "location": "BARRACKS", "description": "Вечерняя поверка. Дневальный проверяет наличие всех солдат.", "choices": [
+      {"id": "choice_1", "text": "Ответить 'Я!' громко", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "disc", "delta": 1}]},
+      {"id": "choice_2", "text": "Тихо проскользнуть в строй", "checkType": "THRESHOLD", "threshold": 60, "effects": [{"stat": "mor", "delta": 1}]},
+      {"id": "choice_3", "text": "Сидоров? Петров? Сидоров? Братья?!", "checkType": "CATASTROPHIC", "threshold": 40, "effects": [{"stat": "mor", "delta": -2}, {"stat": "disc", "delta": -1}]}
+    ]},
+    {"id": "bed_check", "type": "INSPECTION", "checkType": "CATASTROPHIC", "location": "BARRACKS", "description": "Сержант проверяет кровати. Ходит вдоль рядов, ищет любой повод.", "choices": [
+      {"id": "choice_1", "text": "Лежать ровно, как в гробу", "checkType": "CATASTROPHIC", "threshold": 50, "effects": [{"stat": "disc", "delta": 1}]},
+      {"id": "choice_2", "text": "Притвориться спящим", "checkType": "CATASTROPHIC", "threshold": 40, "effects": [{"stat": "mor", "delta": -1}]},
+      {"id": "choice_3", "text": "Шевелиться под одеялом — там костюм", "checkType": "CATASTROPHIC", "threshold": 25, "effects": [{"stat": "mor", "delta": -3}, {"stat": "disc", "delta": -3}]}
+    ]},
+    {"id": "smoking_break", "type": "INFORMAL", "checkType": "CATASTROPHIC", "location": "BARRACKS", "description": "Перекур за гаражом. Сигарета — единственная радость солдата.", "choices": [
+      {"id": "choice_1", "text": "Покурить спокойно, пока никто не видит", "checkType": "THRESHOLD", "threshold": 60, "effects": [{"stat": "mor", "delta": 2}]},
+      {"id": "choice_2", "text": "Делиться с другом — авторитет растёт", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "disc", "delta": 1}]},
+      {"id": "choice_3", "text": "Курить на ходу — могут увидеть", "checkType": "CATASTROPHIC", "threshold": 35, "effects": [{"stat": "mor", "delta": -1}, {"stat": "disc", "delta": -2}]}
+    ]},
+    {"id": "package_from_home", "type": "SAFE", "checkType": "THRESHOLD", "location": "DINING_ROOM", "description": "Посылка из дома! Мама прислала гостинцы. Но есть нюанс — посылку могут 'открыть' на сортировке.", "choices": [
+      {"id": "choice_1", "text": "Съесть всё самому, пока не изъяли", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "mor", "delta": 3}]},
+      {"id": "choice_2", "text": "Поделиться с сослуживцами — авторитет", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "disc", "delta": 2}]},
+      {"id": "choice_3", "text": "Отдать старшине 'на хранение'", "checkType": "THRESHOLD", "threshold": 30, "effects": [{"stat": "disc", "delta": 2}, {"stat": "mor", "delta": -3}]}
+    ]},
+    {"id": "guard_duty", "type": "INFORMAL", "checkType": "CATASTROPHIC", "location": "GUARD_DUTY", "description": "Наряд на кухню. Ночное дежурство — самый сложный наряд.", "choices": [
+      {"id": "choice_1", "text": "Стоять на чатах как вкопанный", "checkType": "CATASTROPHIC", "threshold": 55, "effects": [{"stat": "disc", "delta": 2}]},
+      {"id": "choice_2", "text": "Дремать стоя — высший пилотаж", "checkType": "CATASTROPHIC", "threshold": 40, "effects": [{"stat": "mor", "delta": -1}]},
+      {"id": "choice_3", "text": "Уйти спать в подсобку — вдруг пронесёт", "checkType": "CATASTROPHIC", "threshold": 20, "effects": [{"stat": "disc", "delta": -4}, {"stat": "mor", "delta": -2}]}
+    ]},
+    {"id": "letter_from_home", "type": "SAFE", "checkType": "PROBABILITY", "location": "BARRACKS", "description": "Письмо из дома. Мама пишет, что скучает. А в конверте — чистый лист. Ссора с невестой.", "choices": [
+      {"id": "choice_1", "text": "Плакать в подушку — никто не видит", "checkType": "PROBABILITY", "Chance": 80, "effects": [{"stat": "mor", "delta": 2}]},
+      {"id": "choice_2", "text": "Спрятать письмо — вдруг проверка", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "disc", "delta": -1}]},
+      {"id": "choice_3", "text": "Показать другу — вдвоём веселее", "checkType": "PROBABILITY", "Chance": 70, "effects": [{"stat": "mor", "delta": 1}]}
+    ]},
+    {"id": "drill_march", "type": "INSPECTION", "checkType": "CATASTROPHIC", "location": "TRAINING_GROUND", "description": "Марш-бросок. 10 километров с полной выкладкой. Ноги уже не держат.", "choices": [
+      {"id": "choice_1", "text": "Быть впереди — показать характер", "checkType": "CATASTROPHIC", "threshold": 55, "effects": [{"stat": "end", "delta": 2}, {"stat": "disc", "delta": 1}]},
+      {"id": "choice_2", "text": "Держаться в середине — и не первому, и не последнему", "checkType": "CATASTROPHIC", "threshold": 50, "effects": [{"stat": "end", "delta": 1}]},
+      {"id": "choice_3", "text": "Отстать специально — авось не заметят", "checkType": "CATASTROPHIC", "threshold": 25, "effects": [{"stat": "mor", "delta": -4}, {"stat": "disc", "delta": -3}]}
+    ]},
+    {"id": "sports_day", "type": "ROUTINE", "checkType": "THRESHOLD", "location": "TRAINING_GROUND", "description": "Спортивный день. Подтягивания, отжимания, пресс. Каждый норматив — как экзамен.", "choices": [
+      {"id": "choice_1", "text": "Ставить рекорды — показать класс", "checkType": "THRESHOLD", "threshold": 65, "effects": [{"stat": "str", "delta": 2}]},
+      {"id": "choice_2", "text": "Делать норму и не высовываться", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "end", "delta": 1}]},
+      {"id": "choice_3", "text": "Притворяться слабым — не раскрывать потенциал", "checkType": "THRESHOLD", "threshold": 40, "effects": [{"stat": "mor", "delta": -2}, {"stat": "disc", "delta": -1}]}
+    ]},
+    {"id": "weapon_cleaning", "type": "ROUTINE", "checkType": "THRESHOLD", "location": "STORAGE", "description": "Чистка оружия. АК-74 должен блестеть как зеркало. Сержант проверяет каждую щель.", "choices": [
+      {"id": "choice_1", "text": "Чистить до блеска — малейшая царапина не пройдёт", "checkType": "THRESHOLD", "threshold": 60, "effects": [{"stat": "disc", "delta": 2}]},
+      {"id": "choice_2", "text": "Чистить для вида — лишь бы отстали", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "disc", "delta": -1}]},
+      {"id": "choice_3", "text": "Попросить соседа почистить за 'спасибо'", "checkType": "THRESHOLD", "threshold": 45, "effects": [{"stat": "mor", "delta": -1}, {"stat": "disc", "delta": -1}]}
+    ]},
+    {"id": "training_fitness", "type": "ROUTINE", "checkType": "THRESHOLD", "location": "TRAINING_GROUND", "description": "Физподготовка. Бег на 3 километра. Сержант кричит: 'Быстрей! Ещё быстрей!'", "choices": [
+      {"id": "choice_1", "text": "Бежать изо всех сил — показать характер", "checkType": "THRESHOLD", "threshold": 60, "effects": [{"stat": "end", "delta": 2}, {"stat": "str", "delta": 1}]},
+      {"id": "choice_2", "text": "Бежать в темпе — не обгонять, но и не отставать", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "end", "delta": 1}]},
+      {"id": "choice_3", "text": "Притвориться больным — сойти с дистанции", "checkType": "CATASTROPHIC", "threshold": 30, "effects": [{"stat": "mor", "delta": -4}, {"stat": "disc", "delta": -3}]}
+    ]},
+    {"id": "barracks_cleanup", "type": "ROUTINE", "checkType": "THRESHOLD", "location": "BARRACKS", "description": "Уборка казармы. Протирать пыль, мыть полы, поправлять кровати. Бесконечный цикл.", "choices": [
+      {"id": "choice_1", "text": "Убраться идеально — комендант любит", "checkType": "THRESHOLD", "threshold": 55, "effects": [{"stat": "disc", "delta": 2}]},
+      {"id": "choice_2", "text": "Убраться для вида — лишь бы не ругали", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "disc", "delta": 1}]},
+      {"id": "choice_3", "text": "Спрятаться — пусть другие убирают", "checkType": "CATASTROPHIC", "threshold": 35, "effects": [{"stat": "mor", "delta": -2}, {"stat": "disc", "delta": -2}]}
+    ]},
+    {"id": "sick_call", "type": "SOCIAL", "checkType": "THRESHOLD", "location": "DEFAULT", "description": "Болит голова, живот, всё тело. В медчасти приём по принципу 'спасение утопающих — дело рук самих утопающих'.", "choices": [
+      {"id": "choice_1", "text": "Пойти в санчасть — вдруг реально что-то серьёзное", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "mor", "delta": -1}]},
+      {"id": "choice_2", "text": "Перетерпеть — героически", "checkType": "THRESHOLD", "threshold": 60, "effects": [{"stat": "end", "delta": 1}]},
+      {"id": "choice_3", "text": "Сказать что всё хорошо — идти не хочется", "checkType": "CATASTROPHIC", "threshold": 40, "effects": [{"stat": "end", "delta": -2}, {"stat": "disc", "delta": -1}]}
+    ]},
+    {"id": "punishment", "type": "EMERGENCY", "checkType": "CATASTROPHIC", "location": "DEFAULT", "description": "Нарушил устав — получил наряд на гауптвахту. Всё просто.", "choices": [
+      {"id": "choice_1", "text": "Принять наказание стоически", "checkType": "CATASTROPHIC", "threshold": 40, "effects": [{"stat": "disc", "delta": 1}]},
+      {"id": "choice_2", "text": "Думать о жизни — наедине с собой", "checkType": "CATASTROPHIC", "threshold": 50, "effects": [{"stat": "mor", "delta": -2}]},
+      {"id": "choice_3", "text": "Спорить с охранником — добавить себе срок", "checkType": "CATASTROPHIC", "threshold": 20, "effects": [{"stat": "disc", "delta": -3}, {"stat": "mor", "delta": -2}]}
+    ]},
+    {"id": "election", "type": "SOCIAL", "checkType": "THRESHOLD", "location": "BARRACKS", "description": "Выборы в роте. Голосуем за старшину — кто больше 'сборов' принесёт.", "choices": [
+      {"id": "choice_1", "text": "Голосовать за 'умного' — авось поможет", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "disc", "delta": 1}]},
+      {"id": "choice_2", "text": "Голосовать за 'сильного' — авторитет в строю", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "str", "delta": 1}]},
+      {"id": "choice_3", "text": "Испортить бюллетень — протест", "checkType": "THRESHOLD", "threshold": 40, "effects": [{"stat": "mor", "delta": -2}, {"stat": "disc", "delta": -1}]}
+    ]},
+    {"id": "home_leave", "type": "SAFE", "checkType": "PROBABILITY", "location": "DEFAULT", "description": "Увольнительная! Надо успеть на автобус до города. Последний шанс за год.", "choices": [
+      {"id": "choice_1", "text": "Бежать к проходной со всех ног", "checkType": "PROBABILITY", "Chance": 75, "effects": [{"stat": "agi", "delta": 1}, {"stat": "mor", "delta": 2}]},
+      {"id": "choice_2", "text": "Идти спокойно — кто рано встал, того и тапки", "checkType": "PROBABILITY", "Chance": 80, "effects": [{"stat": "disc", "delta": 1}, {"stat": "mor", "delta": 1}]},
+      {"id": "choice_3", "text": "Опоздать специально — не судьба", "checkType": "CATASTROPHIC", "threshold": 25, "effects": [{"stat": "disc", "delta": -3}, {"stat": "mor", "delta": -5}]}
+    ]},
+    {"id": "barracks_fight", "type": "EMERGENCY", "checkType": "CATASTROPHIC", "location": "BARRACKS", "description": "Конфликт в казарме. Два солдата выясняют отношения. Все смотрят, что будет дальше.", "choices": [
+      {"id": "choice_1", "text": "Разнимать — риск получить самому", "checkType": "CATASTROPHIC", "threshold": 40, "effects": [{"stat": "disc", "delta": 1}, {"stat": "str", "delta": -1}]},
+      {"id": "choice_2", "text": "Смотреть со стороны — не лезть", "checkType": "CATASTROPHIC", "threshold": 50, "effects": [{"stat": "mor", "delta": -1}]},
+      {"id": "choice_3", "text": "Вмешаться на стороне 'своего'", "checkType": "CATASTROPHIC", "threshold": 25, "effects": [{"stat": "str", "delta": -2}, {"stat": "disc", "delta": -4}]}
+    ]},
+    {"id": "shower_day", "type": "ROUTINE", "checkType": "THRESHOLD", "location": "DEFAULT", "description": "Банный день. Один раз в неделю — роскошь. Горячая вода + мыло = счастье.", "choices": [
+      {"id": "choice_1", "text": "Мыться быстро — очередь ждёт", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "agi", "delta": 1}]},
+      {"id": "choice_2", "text": "Топить баню — греть воду для всех", "checkType": "THRESHOLD", "threshold": 60, "effects": [{"stat": "str", "delta": 1}, {"stat": "disc", "delta": 1}]},
+      {"id": "choice_3", "text": "Плескаться воду — наслаждаться моментом", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "mor", "delta": 1}]}
+    ]},
+    {"id": "general_encounter", "type": "SOCIAL", "checkType": "CATASTROPHIC", "location": "DEFAULT", "description": "Генеральская проверка! Идёт по части, все в напряжении. Ты — в коридоре.", "choices": [
+      {"id": "choice_1", "text": "Встать по стойке 'смирно', ждать пока пройдёт", "checkType": "CATASTROPHIC", "threshold": 60, "effects": [{"stat": "disc", "delta": 2}]},
+      {"id": "choice_2", "text": "Попытаться пройти незаметно", "checkType": "CATASTROPHIC", "threshold": 40, "effects": [{"stat": "disc", "delta": -2}]},
+      {"id": "choice_3", "text": "Спросить: 'Можно, я сквозь вас пройду?'", "checkType": "CATASTROPHIC", "threshold": 15, "effects": [{"stat": "mor", "delta": 5}, {"stat": "disc", "delta": -5}]}
+    ]},
+    {"id": "duty_night", "type": "INSPECTION", "checkType": "CATASTROPHIC", "location": "GUARD_DUTY", "description": "Суточный наряд. Целый день на ногах, ночью — не спать.", "choices": [
+      {"id": "choice_1", "text": "Дежурить честно — авторитет", "checkType": "CATASTROPHIC", "threshold": 55, "effects": [{"stat": "disc", "delta": 2}]},
+      {"id": "choice_2", "text": "Периодически отдыхать — выживать", "checkType": "CATASTROPHIC", "threshold": 45, "effects": [{"stat": "end", "delta": 1}]},
+      {"id": "choice_3", "text": "Спать на посту — риск разоблачения", "checkType": "CATASTROPHIC", "threshold": 20, "effects": [{"stat": "disc", "delta": -4}]}
+    ]},
+    {"id": "store_run", "type": "SAFE", "checkType": "PROBABILITY", "location": "DEFAULT", "description": "Магазин на территории. Можно купить печенье, чай, сигареты. Деньги — главное.", "choices": [
+      {"id": "choice_1", "text": "Купить всё — потратить всю зарплату", "checkType": "PROBABILITY", "Chance": 60, "effects": [{"stat": "mor", "delta": 3}, {"stat": "disc", "delta": -2}]},
+      {"id": "choice_2", "text": "Купить только необходимое — эконом", "checkType": "PROBABILITY", "Chance": 70, "effects": [{"stat": "disc", "delta": 1}]},
+      {"id": "choice_3", "text": "Не ходить — дорого и нельзя", "checkType": "PROBABILITY", "Chance": 40, "effects": [{"stat": "mor", "delta": -2}]}
+    ]},
+    {"id": "concert", "type": "SOCIAL", "checkType": "THRESHOLD", "location": "DEFAULT", "description": "Концерт для солдат. Приезжает местная самодеятельность. Петь и танцевать заставляют всех.", "choices": [
+      {"id": "choice_1", "text": "Танцевать — показать удаль", "checkType": "THRESHOLD", "threshold": 60, "effects": [{"stat": "mor", "delta": 2}, {"stat": "agi", "delta": 1}]},
+      {"id": "choice_2", "text": "Сидеть в углу — не выделяться", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "disc", "delta": -1}]},
+      {"id": "choice_3", "text": "Петь хором — слиться со строем", "checkType": "THRESHOLD", "threshold": 55, "effects": [{"stat": "mor", "delta": 1}, {"stat": "disc", "delta": 1}]}
+    ]},
+    {"id": "demobilization", "type": "SAFE", "checkType": "PROBABILITY", "location": "DEFAULT", "description": "Последний день! Дембель — он же ДЕМБЕЛЬ. Автобус ждёт.", "choices": [
+      {"id": "choice_1", "text": "Прощаться со всеми — слёзы на глазах", "checkType": "PROBABILITY", "Chance": 80, "effects": [{"stat": "mor", "delta": 3}]},
+      {"id": "choice_2", "text": "Уйти молча — не показывать чувства", "checkType": "PROBABILITY", "Chance": 70, "effects": [{"stat": "disc", "delta": 2}]},
+      {"id": "choice_3", "text": "Забыть форму и уйти в гражданском", "checkType": "THRESHOLD", "threshold": 50, "effects": [{"stat": "mor", "delta": 1}]}
+    ]},
+    {"id": "shooting_range", "type": "ROUTINE", "checkType": "CATASTROPHIC", "location": "TRAINING_GROUND", "description": "Стрельбы. Мишени в конце полигона. Автомат АК-74. Патроны — 30 штук.", "choices": [
+      {"id": "choice_1", "text": "Стрелять точно в 'яблочко'", "checkType": "CATASTROPHIC", "threshold": 60, "effects": [{"stat": "agi", "delta": 2}, {"stat": "disc", "delta": 1}]},
+      {"id": "choice_2", "text": "Стрелять по направлению — лишь бы звук был", "checkType": "CATASTROPHIC", "threshold": 50, "effects": [{"stat": "disc", "delta": 1}]},
+      {"id": "choice_3", "text": "Промахнуться специально — патроны дороги", "checkType": "CATASTROPHIC", "threshold": 30, "effects": [{"stat": "disc", "delta": -2}]}
+    ]}
+  ]
+}

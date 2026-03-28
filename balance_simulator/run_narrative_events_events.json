@@ -1,0 +1,1670 @@
+[
+  {
+    "id": "e001",
+    "type": "ROUTINE",
+    "difficulty": 2,
+    "narrative": "Утренняя зарядка. Прапорщик Петрович уже второй раз за неделю вызывает добровольцев на «дополнительные упражнения». Сегодня это отжимания до конца строя.",
+    "choices": [
+      {
+        "id": "e001_c1",
+        "text": "Выйти добровольцем первым",
+        "probability": 0.47,
+        "success_effects": {
+          "mor": 0,
+          "str": 2,
+          "disc": 3
+        },
+        "partial_effects": {
+          "mor": -3,
+          "str": 0
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -4
+        }
+      },
+      {
+        "id": "e001_c2",
+        "text": "Делать как все, не выделяться",
+        "probability": 0.53,
+        "success_effects": {
+          "mor": 0,
+          "end": 1,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": -2
+        },
+        "failure_effects": {
+          "mor": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e002",
+    "type": "ROUTINE",
+    "difficulty": 2,
+    "narrative": "Чистка оружия. АК-74 требует особого внимания — завтра стрельбище, и каждый ствол проверят под лупой. Твоя винтовка после вчерашних учений покрыта нагаром.",
+    "choices": [
+      {
+        "id": "e002_c1",
+        "text": "Разобрать и почистить основательно",
+        "probability": 0.45,
+        "success_effects": {
+          "mor": 0,
+          "str": 1,
+          "agi": 1,
+          "disc": 2
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -5
+        }
+      },
+      {
+        "id": "e002_c2",
+        "text": "Протереть снаружи, сойдёт",
+        "probability": 0.55,
+        "success_effects": {
+          "mor": 0,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "e003",
+    "type": "SAFE",
+    "difficulty": 1,
+    "narrative": "Письмо из дома. Почтальонша вручает тебе конверт с мамиными печатями и знакомым почерком. Внутри — фотографии с дачи и записка от всех домашних.",
+    "choices": [
+      {
+        "id": "e003_c1",
+        "text": "Прочитать вечером, после отбоя",
+        "probability": 0.93,
+        "success_effects": {
+          "mor": 2,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": 0
+        },
+        "failure_effects": {
+          "mor": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "e004",
+    "type": "SAFE",
+    "difficulty": 1,
+    "narrative": "Посылка с воли. Дед Дмытрыч получил передачу и, как обычно, не стал делить с «молчунами». Тебе перепал кусок сала и домашний пирог.",
+    "choices": [
+      {
+        "id": "e004_c1",
+        "text": "Съесть самому, пока не забрали",
+        "probability": 0.9,
+        "success_effects": {
+          "mor": 1,
+          "end": 1
+        },
+        "partial_effects": {
+          "mor": -1
+        },
+        "failure_effects": {
+          "mor": -3,
+          "disc": -3
+        }
+      },
+      {
+        "id": "e004_c2",
+        "text": "Поделиться с кубриком",
+        "probability": 0.87,
+        "success_effects": {
+          "mor": 2,
+          "disc": 3
+        },
+        "partial_effects": {
+          "mor": 0,
+          "disc": 1
+        },
+        "failure_effects": {
+          "mor": -1,
+          "disc": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "e005",
+    "type": "SOCIAL",
+    "difficulty": 3,
+    "narrative": "Вечерние посиделки. В кубрике завязался разговор о том, «кто кому должен». Старший по палате Косой намекает, что ты уже месяц не участвовал в «общаке».",
+    "choices": [
+      {
+        "id": "e005_c1",
+        "text": "Заплатить в общак",
+        "probability": 0.45,
+        "success_effects": {
+          "mor": 0,
+          "disc": -4
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -7
+        }
+      },
+      {
+        "id": "e005_c2",
+        "text": "Сказать, что денег нет",
+        "probability": 0.39999999999999997,
+        "success_effects": {
+          "mor": 1,
+          "disc": -6
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -4
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "e006",
+    "type": "SOCIAL",
+    "difficulty": 3,
+    "narrative": "Карты во дворе. Ночью, после отбоя, несколько человек собрались в курилке. На кону сигареты. Косой предлагает: «Садись, пять роблей, пока не спалили».",
+    "choices": [
+      {
+        "id": "e006_c1",
+        "text": "Сыграть партию",
+        "probability": 0.43,
+        "success_effects": {
+          "mor": 1,
+          "disc": -4,
+          "agi": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -5
+        }
+      },
+      {
+        "id": "e006_c2",
+        "text": "Отказаться и уйти",
+        "probability": 0.53,
+        "success_effects": {
+          "mor": 0,
+          "disc": 2
+        },
+        "partial_effects": {
+          "mor": -2
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "e007",
+    "type": "INFORMAL",
+    "difficulty": 3,
+    "narrative": "Требование «деда». Дембель Славик, который уже два года служит, подзывает тебя: «Слушай сюда, новенький. Завтра в шесть поднимись и помой санузел. Понял?».",
+    "choices": [
+      {
+        "id": "e007_c1",
+        "text": "Выполнить без вопросов",
+        "probability": 0.43999999999999995,
+        "success_effects": {
+          "mor": -2,
+          "disc": -6
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -4
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -7
+        }
+      },
+      {
+        "id": "e007_c2",
+        "text": "Сказать, что уже есть наряды",
+        "probability": 0.36,
+        "success_effects": {
+          "mor": 0,
+          "disc": -5,
+          "str": 1
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": -5
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -9
+        }
+      }
+    ]
+  },
+  {
+    "id": "e008",
+    "type": "INFORMAL",
+    "difficulty": 4,
+    "narrative": "Общак на новый год. Куда идёт «общак», никто не знает, но все платят. Вопрос: платить или нет? Завтра праздник, отказ может создать проблемы.",
+    "choices": [
+      {
+        "id": "e008_c1",
+        "text": "Заплатить 500 рублей",
+        "probability": 0.38,
+        "success_effects": {
+          "mor": -1,
+          "disc": -6
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -5
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -8
+        }
+      },
+      {
+        "id": "e008_c2",
+        "text": "Сказать, что деньги кончились",
+        "probability": 0.31999999999999995,
+        "success_effects": {
+          "mor": 0,
+          "disc": -8
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": -6
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -10
+        }
+      }
+    ]
+  },
+  {
+    "id": "e009",
+    "type": "INSPECTION",
+    "difficulty": 4,
+    "narrative": "Внезапная проверка. Рано утром раздаётся крик: «Подъём! Проверка!». Майор Коршунов лично обходит казармы. Проверяют всё: кровати, шкафы, нары.",
+    "choices": [
+      {
+        "id": "e009_c1",
+        "text": "Быстро привести всё в порядок",
+        "probability": 0.38,
+        "success_effects": {
+          "mor": 0,
+          "disc": 8,
+          "end": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 3
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -5
+        }
+      },
+      {
+        "id": "e009_c2",
+        "text": "Молиться, чтобы не проверили твой угол",
+        "probability": 0.4,
+        "success_effects": {
+          "mor": 0,
+          "disc": 5
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 2
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -7
+        }
+      }
+    ]
+  },
+  {
+    "id": "e010",
+    "type": "INSPECTION",
+    "difficulty": 5,
+    "narrative": "Генеральская проверка. Легенда ходит по части. Всё должно быть идеально. Сержант Белов предупреждает: «Если кто-то завалит — остальные будут отвечать».",
+    "choices": [
+      {
+        "id": "e010_c1",
+        "text": "Выложиться на максимум",
+        "probability": 0.30000000000000004,
+        "success_effects": {
+          "mor": -1,
+          "disc": 12,
+          "end": 1
+        },
+        "partial_effects": {
+          "mor": -5,
+          "disc": 5
+        },
+        "failure_effects": {
+          "mor": -9,
+          "disc": -7
+        }
+      },
+      {
+        "id": "e010_c2",
+        "text": "Держаться в середине строя",
+        "probability": 0.42000000000000004,
+        "success_effects": {
+          "mor": 0,
+          "disc": 6
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 2
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "e011",
+    "type": "EMERGENCY",
+    "difficulty": 4,
+    "narrative": "Пожарная тревога. Ночью сработала пожарная сигнализация. В коридоре паника — все бегут к выходу. В толчее можно получить травму или потерять вещи.",
+    "choices": [
+      {
+        "id": "e011_c1",
+        "text": "Бежать организованно, помогать соседям",
+        "probability": 0.33999999999999997,
+        "success_effects": {
+          "mor": 0,
+          "str": 2,
+          "disc": 6,
+          "end": 1
+        },
+        "partial_effects": {
+          "mor": -5,
+          "str": 0
+        },
+        "failure_effects": {
+          "mor": -9,
+          "end": -3
+        }
+      },
+      {
+        "id": "e011_c2",
+        "text": "Бежать быстро, выжить любой ценой",
+        "probability": 0.43999999999999995,
+        "success_effects": {
+          "mor": 0,
+          "agi": 2,
+          "disc": 2
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "e012",
+    "type": "EMERGENCY",
+    "difficulty": 5,
+    "narrative": "Драка между ротами. Конфликт на почве распределения увольнительных перерос в драку. Тебя задело летящим кирпичом. Медики в пути, но нужно принимать решение.",
+    "choices": [
+      {
+        "id": "e012_c1",
+        "text": "Остаться и помочь своим",
+        "probability": 0.28,
+        "success_effects": {
+          "mor": 0,
+          "str": 3,
+          "disc": 8
+        },
+        "partial_effects": {
+          "mor": -5,
+          "disc": 3
+        },
+        "failure_effects": {
+          "mor": -9,
+          "disc": -8
+        }
+      },
+      {
+        "id": "e012_c2",
+        "text": "Уйти в медсанчасть",
+        "probability": 0.4,
+        "success_effects": {
+          "mor": 0,
+          "end": 1,
+          "disc": -2
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e013",
+    "type": "ROUTINE",
+    "difficulty": 2,
+    "narrative": "Поход в столовую. Очередь длинная, а столовая маленькая. Впереди стоит «свой» паренёк, который пропускает своих. Тебя пытаются оттеснить.",
+    "choices": [
+      {
+        "id": "e013_c1",
+        "text": "Пропустить, не создавать конфликт",
+        "probability": 0.53,
+        "success_effects": {
+          "mor": -1,
+          "disc": -2
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -5
+        }
+      },
+      {
+        "id": "e013_c2",
+        "text": "Протиснуться на своё место",
+        "probability": 0.45,
+        "success_effects": {
+          "mor": 0,
+          "disc": 3,
+          "str": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "e014",
+    "type": "ROUTINE",
+    "difficulty": 3,
+    "narrative": "Вечерняя проверка. Прапорщик Петрович заходит в кубрик с фонариком. Проверяет постели, подушки, тумбочки. У тебя под подушкой телефон — запрещёнка.",
+    "choices": [
+      {
+        "id": "e014_c1",
+        "text": "Лежать неподвижно, молиться",
+        "probability": 0.45,
+        "success_effects": {
+          "mor": 0,
+          "disc": 3
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 0
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -4
+        }
+      },
+      {
+        "id": "e014_c2",
+        "text": "Встать и выйти «в сортир»",
+        "probability": 0.5,
+        "success_effects": {
+          "mor": 0,
+          "disc": 2
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "e015",
+    "type": "SAFE",
+    "difficulty": 1,
+    "narrative": "Увольнительная. Наконец-то отпуск на сутки! Можно выйти за ворота, увидеть мир за стенами части. Друзья ждут в городе.",
+    "choices": [
+      {
+        "id": "e015_c1",
+        "text": "Выехать в город",
+        "probability": 0.9,
+        "success_effects": {
+          "mor": 3,
+          "disc": 2
+        },
+        "partial_effects": {
+          "mor": 0
+        },
+        "failure_effects": {
+          "mor": -3,
+          "disc": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "e016",
+    "type": "SAFE",
+    "difficulty": 1,
+    "narrative": "Похвала от прапорщика. За хорошую работу тебя отметили на построении. Мелочь, но приятно — редкий случай, когда формальное признание достаётся рядовому.",
+    "choices": [
+      {
+        "id": "e016_c1",
+        "text": "Принять похвалу с достоинством",
+        "probability": 0.9,
+        "success_effects": {
+          "mor": 2,
+          "disc": 4
+        },
+        "partial_effects": {
+          "mor": 0,
+          "disc": 1
+        },
+        "failure_effects": {
+          "mor": -2,
+          "disc": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "e017",
+    "type": "SOCIAL",
+    "difficulty": 3,
+    "narrative": "Помощь новичку. В кубрик прибыл новый боец — растерянный, напуганный. Старшие по кубрику смотрят на тебя: «Ты ж с его района, ты и занимайся».",
+    "choices": [
+      {
+        "id": "e017_c1",
+        "text": "Помочь освоиться",
+        "probability": 0.45,
+        "success_effects": {
+          "mor": 1,
+          "disc": 4
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 1
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -5
+        }
+      },
+      {
+        "id": "e017_c2",
+        "text": "Сказать, что не знакомы",
+        "probability": 0.53,
+        "success_effects": {
+          "mor": 0,
+          "disc": -3
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "e018",
+    "type": "SOCIAL",
+    "difficulty": 4,
+    "narrative": "Разговор офицеров при тебе. Командир роты говорит что-то о «проблемных» в подразделении. Ты случайно слышишь свою фамилию.",
+    "choices": [
+      {
+        "id": "e018_c1",
+        "text": "Притвориться, что не слышал",
+        "probability": 0.49,
+        "success_effects": {
+          "mor": 0,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -6
+        }
+      },
+      {
+        "id": "e018_c2",
+        "text": "Показать, что слышал и понял",
+        "probability": 0.39,
+        "success_effects": {
+          "mor": 1,
+          "disc": 5
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 2
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -7
+        }
+      }
+    ]
+  },
+  {
+    "id": "e019",
+    "type": "INFORMAL",
+    "difficulty": 3,
+    "narrative": "Старший по наряду. Тебя назначили старшим на кухню. Нужно распределить обязанности между «молодыми». Кто-то будет резать, кто-то — мыть.",
+    "choices": [
+      {
+        "id": "e019_c1",
+        "text": "Распределить справедливо",
+        "probability": 0.4,
+        "success_effects": {
+          "mor": 0,
+          "disc": -4,
+          "str": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -4
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -7
+        }
+      },
+      {
+        "id": "e019_c2",
+        "text": "Дать самую тяжёлую работу «дедам»",
+        "probability": 0.33999999999999997,
+        "success_effects": {
+          "mor": -1,
+          "disc": -8
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": -6
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -9
+        }
+      }
+    ]
+  },
+  {
+    "id": "e020",
+    "type": "INFORMAL",
+    "difficulty": 4,
+    "narrative": "Тайный сбор. Ночью в курилке собрались «свои». Решают вопрос — кто будет «сдавать» информацию офицерам. Подозрения падают на тебя.",
+    "choices": [
+      {
+        "id": "e020_c1",
+        "text": "Защищаться и требовать доказательств",
+        "probability": 0.36,
+        "success_effects": {
+          "mor": 0,
+          "disc": -6,
+          "str": 1
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": -5
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -9
+        }
+      },
+      {
+        "id": "e020_c2",
+        "text": "Молча уйти",
+        "probability": 0.42000000000000004,
+        "success_effects": {
+          "mor": -1,
+          "disc": -5
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -4
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "e021",
+    "type": "INSPECTION",
+    "difficulty": 4,
+    "narrative": "Проверка оружия. Старшина проверяет АК всех солдат. У тебя ствол чистый, но затвор заедает — попадал в грязь на учениях.",
+    "choices": [
+      {
+        "id": "e021_c1",
+        "text": "Честно показать проблему",
+        "probability": 0.38,
+        "success_effects": {
+          "mor": 0,
+          "disc": 8
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": 3
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -6
+        }
+      },
+      {
+        "id": "e021_c2",
+        "text": "Разобрать и починить перед приходом",
+        "probability": 0.42000000000000004,
+        "success_effects": {
+          "mor": 0,
+          "disc": 5,
+          "agi": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 2
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e022",
+    "type": "INSPECTION",
+    "difficulty": 5,
+    "narrative": "Физо нормативы. Марш-бросок на 10 км. После бессонной ночи и тяжёлого дня это кажется невозможным. Но отказ = позор.",
+    "choices": [
+      {
+        "id": "e022_c1",
+        "text": "Идти до конца",
+        "probability": 0.30000000000000004,
+        "success_effects": {
+          "mor": -1,
+          "disc": 10,
+          "end": 2,
+          "str": 1
+        },
+        "partial_effects": {
+          "mor": -5,
+          "disc": 4
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -7
+        }
+      },
+      {
+        "id": "e022_c2",
+        "text": "Сойти с дистанции",
+        "probability": 0.47,
+        "success_effects": {
+          "mor": -2,
+          "disc": -4
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": -4
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "e023",
+    "type": "EMERGENCY",
+    "difficulty": 4,
+    "narrative": "Травма на учениях. Во время занятий пострадал сослуживец. Нужно оказать первую помощь и доложить. Командир взвода смотрит на тебя.",
+    "choices": [
+      {
+        "id": "e023_c1",
+        "text": "Оказать помощь пострадавшему",
+        "probability": 0.36,
+        "success_effects": {
+          "mor": 0,
+          "end": 2,
+          "disc": 6
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": 2
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -6
+        }
+      },
+      {
+        "id": "e023_c2",
+        "text": "Бежать за медиками",
+        "probability": 0.4,
+        "success_effects": {
+          "mor": 0,
+          "disc": 4
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 1
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e024",
+    "type": "EMERGENCY",
+    "difficulty": 5,
+    "narrative": "Массовое отравление. После ужина десятки человек почувствовали себя плохо. В медсанчасти очереди. Ты тоже ел рис, но пока держишься.",
+    "choices": [
+      {
+        "id": "e024_c1",
+        "text": "Терпеть и помогать другим",
+        "probability": 0.30000000000000004,
+        "success_effects": {
+          "mor": 0,
+          "end": 1,
+          "disc": 8
+        },
+        "partial_effects": {
+          "mor": -5,
+          "disc": 3
+        },
+        "failure_effects": {
+          "mor": -9,
+          "end": -2,
+          "disc": -7
+        }
+      },
+      {
+        "id": "e024_c2",
+        "text": "Попроситься в медсанчасть",
+        "probability": 0.38,
+        "success_effects": {
+          "mor": 0,
+          "end": 1,
+          "disc": -2
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e025",
+    "type": "ROUTINE",
+    "difficulty": 2,
+    "narrative": "Уборка территории. После субботника старшина проверяет качество. Твоя зона — мусорка за спортзалом. Нашли окурок — формальность или проблема?",
+    "choices": [
+      {
+        "id": "e025_c1",
+        "text": "Убрать всё идеально",
+        "probability": 0.5,
+        "success_effects": {
+          "mor": 0,
+          "str": 1,
+          "disc": 3
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -3
+        }
+      },
+      {
+        "id": "e025_c2",
+        "text": "Убрать только видимое",
+        "probability": 0.53,
+        "success_effects": {
+          "mor": 0,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e026",
+    "type": "ROUTINE",
+    "difficulty": 3,
+    "narrative": "Караул. Ночная смена на вышке. Холодно, скучно, хочется спать. Но если уснёшь — последствия серьёзные.",
+    "choices": [
+      {
+        "id": "e026_c1",
+        "text": "Стоять и смотреть в темноту",
+        "probability": 0.45,
+        "success_effects": {
+          "mor": 0,
+          "end": 2,
+          "disc": 4
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 1
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -5
+        }
+      },
+      {
+        "id": "e026_c2",
+        "text": "Попросить сокамерника поболтать",
+        "probability": 0.49,
+        "success_effects": {
+          "mor": 0,
+          "disc": 2
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "e027",
+    "type": "SAFE",
+    "difficulty": 1,
+    "narrative": "День рождения товарища. В кубрике небольшой праздник — собрали деньги на торт и сок. Даже прапорщик заглянул с поздравлением.",
+    "choices": [
+      {
+        "id": "e027_c1",
+        "text": "Присоединиться к празднику",
+        "probability": 0.91,
+        "success_effects": {
+          "mor": 2,
+          "disc": 2
+        },
+        "partial_effects": {
+          "mor": 0
+        },
+        "failure_effects": {
+          "mor": -2,
+          "disc": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "e028",
+    "type": "SAFE",
+    "difficulty": 1,
+    "narrative": "Встреча со старым другом. Оказывается, твой друг из школы тоже служит здесь, в другой роте. Встретились случайно на построении.",
+    "choices": [
+      {
+        "id": "e028_c1",
+        "text": "Договориться о встрече",
+        "probability": 0.89,
+        "success_effects": {
+          "mor": 3,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": 0
+        },
+        "failure_effects": {
+          "mor": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "e029",
+    "type": "SOCIAL",
+    "difficulty": 3,
+    "narrative": "История из гражданки. Вечером, после отбоя, разговоры о доме. Кто-то показывает фото семьи, делится планами на «дембель».",
+    "choices": [
+      {
+        "id": "e029_c1",
+        "text": "Рассказать свою историю",
+        "probability": 0.47,
+        "success_effects": {
+          "mor": 1,
+          "disc": 3
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 1
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -5
+        }
+      },
+      {
+        "id": "e029_c2",
+        "text": "Помолчать и слушать",
+        "probability": 0.51,
+        "success_effects": {
+          "mor": 0,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": -2
+        },
+        "failure_effects": {
+          "mor": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e030",
+    "type": "SOCIAL",
+    "difficulty": 4,
+    "narrative": "Конфликт с «дедами». На «перекуре» старшие солдаты рассказывают байки о «молодых» и косятся на тебя. Начинают провоцировать.",
+    "choices": [
+      {
+        "id": "e030_c1",
+        "text": "Поддержать разговор",
+        "probability": 0.41,
+        "success_effects": {
+          "mor": 0,
+          "disc": -3,
+          "str": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -4
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -7
+        }
+      },
+      {
+        "id": "e030_c2",
+        "text": "Уйти, пока не началось",
+        "probability": 0.49,
+        "success_effects": {
+          "mor": -1,
+          "disc": 2
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e031",
+    "type": "INFORMAL",
+    "difficulty": 3,
+    "narrative": "Лотерея нарядов. В кубрике придумали «честную» систему — тянуть жребий, кому завтра в наряд. Но «деды» могут влиять на результат.",
+    "choices": [
+      {
+        "id": "e031_c1",
+        "text": "Тянуть жребий как все",
+        "probability": 0.42000000000000004,
+        "success_effects": {
+          "mor": 0,
+          "disc": -3
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -6
+        }
+      },
+      {
+        "id": "e031_c2",
+        "text": "Потребовать честного распределения",
+        "probability": 0.36,
+        "success_effects": {
+          "mor": 0,
+          "disc": -6,
+          "str": 1
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": -5
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "e032",
+    "type": "INFORMAL",
+    "difficulty": 4,
+    "narrative": "Проверка «своих». Вечером Косой подходит и спрашивает: «Ты с нами или нет?» Под этим подразумевается общак, собрания, взаимовыручка — но и обязательства.",
+    "choices": [
+      {
+        "id": "e032_c1",
+        "text": "Согласиться",
+        "probability": 0.4,
+        "success_effects": {
+          "mor": -1,
+          "disc": -8
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -6
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -9
+        }
+      },
+      {
+        "id": "e032_c2",
+        "text": "Сказать, что подумаешь",
+        "probability": 0.38,
+        "success_effects": {
+          "mor": 0,
+          "disc": -5
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": -5
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -9
+        }
+      }
+    ]
+  },
+  {
+    "id": "e033",
+    "type": "INSPECTION",
+    "difficulty": 4,
+    "narrative": "Проверка постели. Старшина лично проверяет, как заправлены кровати. У тебя матрас неровный — предыдущий «жилец» оставил комок.",
+    "choices": [
+      {
+        "id": "e033_c1",
+        "text": "Переделать по-быстрому",
+        "probability": 0.38,
+        "success_effects": {
+          "mor": 0,
+          "disc": 7
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 2
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -5
+        }
+      },
+      {
+        "id": "e033_c2",
+        "text": "Надеяться, что не заметит",
+        "probability": 0.43999999999999995,
+        "success_effects": {
+          "mor": 0,
+          "disc": 4
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 1
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "e034",
+    "type": "INSPECTION",
+    "difficulty": 5,
+    "narrative": "Строевая подготовка. Полковник лично принимает строевой смотр. Каждая ошибка видна. Ты на левом фланге — самое сложное место.",
+    "choices": [
+      {
+        "id": "e034_c1",
+        "text": "Выложиться полностью",
+        "probability": 0.30000000000000004,
+        "success_effects": {
+          "mor": -1,
+          "disc": 12,
+          "agi": 1
+        },
+        "partial_effects": {
+          "mor": -5,
+          "disc": 5
+        },
+        "failure_effects": {
+          "mor": -9,
+          "disc": -7
+        }
+      },
+      {
+        "id": "e034_c2",
+        "text": "Держаться в середине",
+        "probability": 0.42000000000000004,
+        "success_effects": {
+          "mor": 0,
+          "disc": 6
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 2
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e035",
+    "type": "EMERGENCY",
+    "difficulty": 4,
+    "narrative": "Побег из части. Ночью кто-то пытается сбежать. Его поймали и приволокли обратно. Всех ставят в строй и заставляют смотреть на разборку.",
+    "choices": [
+      {
+        "id": "e035_c1",
+        "text": "Стоять и смотреть",
+        "probability": 0.38,
+        "success_effects": {
+          "mor": -1,
+          "disc": 3
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": 1
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -6
+        }
+      },
+      {
+        "id": "e035_c2",
+        "text": "Отвернуться",
+        "probability": 0.42000000000000004,
+        "success_effects": {
+          "mor": 0,
+          "disc": -3
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -4
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -7
+        }
+      }
+    ]
+  },
+  {
+    "id": "e036",
+    "type": "EMERGENCY",
+    "difficulty": 5,
+    "narrative": "Проверка с понятыми. Приехала комиссия с понятыми из другой части. Проверяют серьёзно — наручники, допросы. Есть подозреваемые, ты не из них, но может задеть.",
+    "choices": [
+      {
+        "id": "e036_c1",
+        "text": "Отвечать на вопросы спокойно",
+        "probability": 0.31999999999999995,
+        "success_effects": {
+          "mor": 0,
+          "disc": 10
+        },
+        "partial_effects": {
+          "mor": -4,
+          "disc": 4
+        },
+        "failure_effects": {
+          "mor": -9,
+          "disc": -8
+        }
+      },
+      {
+        "id": "e036_c2",
+        "text": "Молчать и требовать адвоката",
+        "probability": 0.36,
+        "success_effects": {
+          "mor": 0,
+          "disc": -4,
+          "str": 1
+        },
+        "partial_effects": {
+          "mor": -5,
+          "disc": -5
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -9
+        }
+      }
+    ]
+  },
+  {
+    "id": "e037",
+    "type": "ROUTINE",
+    "difficulty": 2,
+    "narrative": "Построение. Прозвенел горн, все бегут на плац. Ты опаздываешь — на двадцать секунд, но прапорщик уже построил всех и смотрит на тебя.",
+    "choices": [
+      {
+        "id": "e037_c1",
+        "text": "Извиниться и встать в строй",
+        "probability": 0.5,
+        "success_effects": {
+          "mor": 0,
+          "disc": 2
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -4
+        }
+      },
+      {
+        "id": "e037_c2",
+        "text": "Попытаться проскочить незамеченным",
+        "probability": 0.51,
+        "success_effects": {
+          "mor": 0,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "e038",
+    "type": "ROUTINE",
+    "difficulty": 3,
+    "narrative": "Пересменок на кухне. Тебя отправили помогать поварам. Нужно почистить картошку для тысячи человек — физически тяжело, но вечером будет «спасибо».",
+    "choices": [
+      {
+        "id": "e038_c1",
+        "text": "Работать усердно",
+        "probability": 0.45,
+        "success_effects": {
+          "mor": 0,
+          "str": 2,
+          "disc": 3
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": 1
+        },
+        "failure_effects": {
+          "mor": -5,
+          "disc": -4
+        }
+      },
+      {
+        "id": "e038_c2",
+        "text": "Делать вид, что работаешь",
+        "probability": 0.51,
+        "success_effects": {
+          "mor": 0,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e039",
+    "type": "SOCIAL",
+    "difficulty": 4,
+    "narrative": "Талоны на сигареты. В армии дефицит — даже сигареты по талонам. Твой «друг» занял твой талон в прошлый раз и не отдал. Сегодня он предлагает «забыть».",
+    "choices": [
+      {
+        "id": "e039_c1",
+        "text": "Потребовать талон обратно",
+        "probability": 0.39,
+        "success_effects": {
+          "mor": 0,
+          "disc": -4,
+          "str": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -4
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -7
+        }
+      },
+      {
+        "id": "e039_c2",
+        "text": "Простить",
+        "probability": 0.51,
+        "success_effects": {
+          "mor": -1,
+          "disc": -3
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e040",
+    "type": "INFORMAL",
+    "difficulty": 3,
+    "narrative": "Шапка «деда». Командир требует сдать шапки в каптёрку. Но ты знаешь, что «деды» часто забирают чужие шапки. Проверить свою или довериться?",
+    "choices": [
+      {
+        "id": "e040_c1",
+        "text": "Проверить и пометить",
+        "probability": 0.42000000000000004,
+        "success_effects": {
+          "mor": 0,
+          "disc": -3
+        },
+        "partial_effects": {
+          "mor": -3
+        },
+        "failure_effects": {
+          "mor": -6,
+          "disc": -5
+        }
+      },
+      {
+        "id": "e040_c2",
+        "text": "Сдать и молиться",
+        "probability": 0.45999999999999996,
+        "success_effects": {
+          "mor": 0,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -3
+        },
+        "failure_effects": {
+          "mor": -7,
+          "disc": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "e041",
+    "type": "EMERGENCY",
+    "difficulty": 4,
+    "narrative": "Авария на учениях. Бронетранспортёр съехал в кювет. В экипаже есть пострадавшие. Командир требует помочь эвакуации — тяжёлая работа.",
+    "choices": [
+      {
+        "id": "e041_c1",
+        "text": "Помочь пострадавшим",
+        "probability": 0.33999999999999997,
+        "success_effects": {
+          "mor": 0,
+          "str": 2,
+          "disc": 7,
+          "end": 1
+        },
+        "partial_effects": {
+          "mor": -5,
+          "disc": 3
+        },
+        "failure_effects": {
+          "mor": -9,
+          "disc": -6
+        }
+      },
+      {
+        "id": "e041_c2",
+        "text": "Стоять в стороне",
+        "probability": 0.45999999999999996,
+        "success_effects": {
+          "mor": -1,
+          "disc": -4
+        },
+        "partial_effects": {
+          "mor": -3,
+          "disc": -4
+        },
+        "failure_effects": {
+          "mor": -8,
+          "disc": -7
+        }
+      }
+    ]
+  },
+  {
+    "id": "e042",
+    "type": "SAFE",
+    "difficulty": 1,
+    "narrative": "Письмо от девушки. Получил письмо от неё — первое за месяц. Пишет, что скучает и ждёт. Читать некогда — идёт построение, но письмо в кармане греет душу.",
+    "choices": [
+      {
+        "id": "e042_c1",
+        "text": "Спрятать и прочитать вечером",
+        "probability": 0.93,
+        "success_effects": {
+          "mor": 3,
+          "disc": 1
+        },
+        "partial_effects": {
+          "mor": 0
+        },
+        "failure_effects": {
+          "mor": -2
+        }
+      }
+    ]
+  }
+]

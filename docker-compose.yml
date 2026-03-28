@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: army-game-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: army_game
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - army-game-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: army-game-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - army-game-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: army-game-backend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@postgres:5432/army_game?sslmode=disable
+      - REDIS_URL=redis:6379
+      - SERVER_PORT=8080
+    depends_on:
+      - postgres
+    networks:
+      - army-game-network
+
+volumes:
+  postgres_data:
+
+networks:
+  army-game-network:
+    driver: bridge
